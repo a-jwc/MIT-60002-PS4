@@ -1,0 +1,37 @@
+1. What happens to the total population before introducing the antibiotic?
+
+First simulation:
+The total population increases, convering at ~830.
+
+Second simulation:
+The total population inreases until roughly time step 25. From time step 25 to 150, the population decreases asymptotically. 
+
+2. What happens to the resistant bacteria population before introducing the antibiotic?
+
+First simulation:
+The resistant population follows a similar trend to the total population. It decreases at a lower rate than the total population.
+
+Second simulation:
+The resistant population inreases until roughly time step 25. From time step 25 to 150, the population decreases less dramatically than the first simulation. Jitter in the population is also observed.
+
+3. What happens to the total population after introducing the antibiotic?
+
+First simulation: 
+The total population decreases dramatically over <20 timesteps, falling to the remaining resistant population.
+
+Second simulation:
+The total population decreases until the population is zero.
+
+4. What happens to the resistant bacteria population after introducing the antibiotic?
+
+First simulation:
+The resistant population begins increasing before converging at ~400.
+
+Second simulation:
+The resistant population follows a near identical trend to the total population, observing overlapping trend lines.
+
+(pop avg, 95% intervals) at time step 299:
+total pop:  (401.28, 7.887491995000691)
+res pop: (401.28, 7.887491995000691)
+total pop:  (0.0, 0.0)
+res pop: (0.0, 0.0)

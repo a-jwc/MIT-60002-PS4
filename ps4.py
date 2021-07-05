@@ -614,6 +614,8 @@ def simulation_with_antibiotic(num_bacteria,
         avg_res = calc_pop_avg(res_populations, time_step)
         avg_list.append(avg_pop)
         res_list.append(avg_res)
+    print("total pop: ", calc_95_ci(populations, 399))
+    print("res pop:", calc_95_ci(res_populations, 399))
     make_two_curve_plot(range(400), avg_list, res_list, "Average Total Population Size", "Average Resistant Population Size", "Time Step", "Number of Bacteria", "Average Total and Antibiotic Resistant Population Sizes vs. Time Step")
     return (populations, res_populations)
 
